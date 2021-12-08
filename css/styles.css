@@ -101,10 +101,16 @@ color: var(--theme-color);
 }
 /* Ссылка на вебсайт,телефонный номер */
 .nav-box{
-
+  display: flex;
+  align-items: center;
   margin-left: auto;
+
 }
+
 .nav-all{
+display: flex;
+align-items: center;
+margin-right: 30px;
 padding-top: 32px;
 padding-bottom: 32px;
 font-weight: 500;
@@ -114,14 +120,31 @@ text-decoration: none;
 color: var(--text-secondary);
 letter-spacing: 0.02em;
 }
-.nav-all:hover
+.nav-all:hover,
 .nav-all:focus{
-color: var(--theme-color);   
+color: var(--theme-color);
+
+}
+ 
+
+.svg-list{
+fill: var(--text-secondary);
+margin-right: 10px;
+}
+.svg-list:hover,
+.svg-list:focus{
+fill: var(--theme-color);
+}
+.nav-all:hover .svg-list,
+.nav-all:focus .svg-list{
+fill: var(--theme-color);
+
 }
 .nav-all-phone{
+display: flex;
+align-items: center;
 padding-top: 32px;
 padding-bottom: 32px;
-margin-left: 50px;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -129,10 +152,15 @@ text-decoration: none;
 color: var(--text-secondary);
 letter-spacing: 0.02em;
 }
-.nav-all-phone:hover
+.nav-all-phone:hover,
 .nav-all-phone:focus{
 color: var(--theme-color);   
 }
+.nav-all-phone:hover .svg-list,
+.nav-all-phone:focus .svg-list{
+fill: var(--theme-color);}
+
+
 /* Уникальный контент страницы */
 .hero{
 display: block;
@@ -195,6 +223,16 @@ flex-wrap: wrap;
 width: 270px;
 
 }
+.svg{
+  
+  height: 70px;
+}
+.box-svg{
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: #F5F4FA;
+}
 .special-box:not(:last-child){
 margin-right: 30px;}
 
@@ -256,7 +294,9 @@ border-radius: 0px 0px 4px 4px;
 }
 .command-box:not(:last-child){
 margin-right: 30px;}
-
+.command{
+  background: #E5E5E5;
+}
 .command-title-list{
 
 margin-top: 0px;
@@ -269,16 +309,38 @@ color: var(--text-primary);
 }
 .command-title-text{
 margin-top: 0;
-margin-bottom: 0;
+margin-bottom: 16px;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--text-secondary);
 }
 .list-box{
-padding: 30px 0;
+padding: 30px 32px;
 }
+.social-box{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.social-list{
+display: flex;
+align-items: center;
+background-position: center;
+border-radius: 50%;
+fill: #AFB1B8;
+width: 44px;
+height: 44px;
 
+outline: 1px solid red;
+}
+.social-list:not(:last-child){
+margin-right: 10px;}
+.svg-list{
+align-items: center;
+justify-content: center;
+background-size: contain;
+}
 
 /* футер */
 .footer{
