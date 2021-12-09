@@ -307,6 +307,7 @@ line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--text-primary);
 }
+
 .command-title-text{
 margin-top: 0;
 margin-bottom: 16px;
@@ -315,36 +316,89 @@ line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--text-secondary);
 }
+
 .list-box{
 padding: 30px 32px;
 }
+
 .social-box{
   display: flex;
   justify-content: center;
-  list-style: none;
+  align-items: center;
+ list-style: none;
 }
+
 .social-list{
 display: flex;
+justify-content: center;
 align-items: center;
-background-position: center;
 border-radius: 50%;
-fill: #AFB1B8;
+
 width: 44px;
 height: 44px;
-
-outline: 1px solid red;
 }
 .social-list:not(:last-child){
 margin-right: 10px;}
-.svg-list{
-align-items: center;
+
+.social{
+display: inline-block;
 justify-content: center;
-background-size: contain;
+align-items: center;
+list-style: none;
 }
+.svg-list-ico{
+fill: #AFB1B8;
+margin: 0;
+}
+.social-list:hover,
+.social-list:focus{
+  background-color: var(--theme-color);
+}
+.social-list:hover .svg-list-ico,
+.social-list:focus .svg-list-ico{
+fill: var(--primary-white-color);
+}
+/* постоянные клиенты */
+.clients{
+display: flex;
+margin: 0;
+
+/* border: #AFB1B8; */
+
+}
+.clients-box{
+width: 170px;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+.clients-box:not(:last-child){
+margin-right: 30px;}
+
+.clients-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 16px 32px;
+  list-style: none;
+}
+.clients-svg{
+  fill: #AFB1B8;
+}
+.clients-box:hover,
+.clients-box:focus{
+border: 1px solid var(--theme-color);
+}
+.clients-box:hover .clients-svg,
+.clients-box:focus .clients-svg{
+fill: var(--theme-color);
+}
+
 
 /* футер */
 .footer{
-padding-top: 60px;
+  display: inline-flex;
+  padding-top: 60px;
 padding-bottom: 60px;
 background: #2F303A;
 }
@@ -385,6 +439,19 @@ line-height: 1.7;
 letter-spacing: 0.03em;
 color: var(--primary-white-color);   
 }
+/* футер соц.сети */
+
+
+
+.call-title{
+
+}
+.call-content
+
+
+
+
+
 
 /* Партфолио */
 .main-button{
@@ -476,3 +543,7 @@ padding-right: 24px;
 .card-text-list{
 text-decoration: none;
 }
+
+
+
+
