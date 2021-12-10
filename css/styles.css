@@ -4,6 +4,7 @@
 --theme-color: #2196F3;
 --primary-font: roboto,sans-serif;
 --primary-white-color: #ffffff;
+--icons-color: #AFB1B8;
 }
 
 body{
@@ -221,11 +222,6 @@ margin-bottom: 0;
 .special-box{
 flex-wrap: wrap;
 width: 270px;
-
-}
-.svg{
-  
-  height: 70px;
 }
 .box-svg{
   display: inline-block;
@@ -347,7 +343,7 @@ align-items: center;
 list-style: none;
 }
 .svg-list-ico{
-fill: #AFB1B8;
+fill: var(--icons-color);
 margin: 0;
 }
 .social-list:hover,
@@ -368,7 +364,7 @@ margin: 0;
 }
 .clients-box{
 width: 170px;
-border: 1px solid #AFB1B8;
+border: 1px solid var(--icons-color);
 border-radius: 4px;
 }
 .clients-box:not(:last-child){
@@ -383,7 +379,7 @@ margin-right: 30px;}
   list-style: none;
 }
 .clients-svg{
-  fill: #AFB1B8;
+  fill: var(--icons-color);
 }
 .clients-box:hover,
 .clients-box:focus{
@@ -396,9 +392,11 @@ fill: var(--theme-color);
 
 
 /* футер */
+.foot{
+display: flex;  
+}
 .footer{
-  display: inline-flex;
-  padding-top: 60px;
+padding-top: 60px;
 padding-bottom: 60px;
 background: #2F303A;
 }
@@ -440,20 +438,72 @@ letter-spacing: 0.03em;
 color: var(--primary-white-color);   
 }
 /* футер соц.сети */
-
+.call{
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  margin-left: 70px;
+  margin-top: 0;
+  padding: 72px auto 100px 72px;
+}
 
 
 .call-title{
 
+font-family: Roboto;  
+font-weight:  bold;
+font-style: normal;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-white-color);
+margin-bottom: 20px;
+margin-top: 12px;
+
 }
-.call-content
+.call-content{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+ list-style: none;
+ margin: 0;
+}
 
 
+.call-icon{
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.1);
+width: 44px;
+height: 44px;  
+}
 
+.call-icon:not(:last-child){
+margin-right: 10px;}
+
+.call-list{
+display: inline-block;
+justify-content: center;
+align-items: center;
+list-style: none;
+}
+.call-svg{
+fill: var(--primary-white-color);
+margin: 0;
+}
+.call-icon:hover,
+.call-icon:focus{
+background-color: 
+rgba(33, 150, 243, 1);
+}
 
 
 
 /* Партфолио */
+
 .main-button{
 display: inline-block;
 font-family: Roboto;    
@@ -542,8 +592,12 @@ padding-right: 24px;
 }
 .card-text-list{
 text-decoration: none;
+
 }
+.main-image:hover,
+.main-image:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
-
+}
 
 
