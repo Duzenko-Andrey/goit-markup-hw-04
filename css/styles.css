@@ -74,7 +74,7 @@ text-decoration: none;
 display: flex;
 flex-wrap: wrap;
 align-items: center;
-padding: 24px 0 25px 0;
+padding: 0;
 }
 /* Навигация на другие страницы */
 .nav{
@@ -224,9 +224,12 @@ flex-wrap: wrap;
 width: 270px;
 }
 .box-svg{
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  padding: 25px 100px;
+  padding: 25px 0;
+  width: 270px;
   background-color: #F5F4FA;
 }
 .special-box:not(:last-child){
@@ -291,7 +294,7 @@ border-radius: 0px 0px 4px 4px;
 .command-box:not(:last-child){
 margin-right: 30px;}
 .command{
-  background: #E5E5E5;
+  background: rgba(245, 244, 250, 1);
 }
 .command-title-list{
 
@@ -328,30 +331,31 @@ padding: 30px 32px;
 display: flex;
 justify-content: center;
 align-items: center;
-border-radius: 50%;
 
-width: 44px;
-height: 44px;
 }
 .social-list:not(:last-child){
 margin-right: 10px;}
 
 .social{
-display: inline-block;
+display: flex;
 justify-content: center;
 align-items: center;
 list-style: none;
+
+border-radius: 50%;
+width: 44px;
+height: 44px;
 }
 .svg-list-ico{
 fill: var(--icons-color);
 margin: 0;
 }
-.social-list:hover,
-.social-list:focus{
+.social:hover,
+.social:focus{
   background-color: var(--theme-color);
 }
-.social-list:hover .svg-list-ico,
-.social-list:focus .svg-list-ico{
+.social:hover .svg-list-ico,
+.social:focus .svg-list-ico{
 fill: var(--primary-white-color);
 }
 /* постоянные клиенты */
@@ -381,12 +385,12 @@ margin-right: 30px;}
 .clients-svg{
   fill: var(--icons-color);
 }
-.clients-box:hover,
-.clients-box:focus{
+.clients-list:hover,
+.clients-list:focus{
 border: 1px solid var(--theme-color);
 }
-.clients-box:hover .clients-svg,
-.clients-box:focus .clients-svg{
+.clients-list:hover .clients-svg,
+.clients-list:focus .clients-svg{
 fill: var(--theme-color);
 }
 
@@ -475,27 +479,28 @@ margin-top: 12px;
 display: flex;
 justify-content: center;
 align-items: center;
-border-radius: 50%;
-background: rgba(255, 255, 255, 0.1);
-width: 44px;
-height: 44px;  
+
 }
 
 .call-icon:not(:last-child){
 margin-right: 10px;}
 
 .call-list{
-display: inline-block;
+display: flex;
 justify-content: center;
 align-items: center;
-list-style: none;
+/* list-style: none; */
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.1);
+width: 44px;
+height: 44px;  
 }
 .call-svg{
 fill: var(--primary-white-color);
 margin: 0;
 }
-.call-icon:hover,
-.call-icon:focus{
+.call-list:hover,
+.call-list:focus{
 background-color: 
 rgba(33, 150, 243, 1);
 }
@@ -570,10 +575,10 @@ display: flex;
 flex-wrap: wrap;
 }
 .main-image{
-
 width: 370px;
 margin-right: 30px;
 margin-bottom: 30px;
+
 border: 1px solid #EEEEEE;
 }
 .main-image:nth-child(3n){
@@ -593,7 +598,10 @@ padding-right: 24px;
 .card-text-list{
 text-decoration: none;
 
+
+
 }
+
 .main-image:hover,
 .main-image:focus{
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
